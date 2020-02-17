@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<% if  @same == false %>
+<%="Sorry but #{@words.join} can't  be build out of #{@range}" %>
+<% elsif @exist == true%>
+<%= "Congratulation #{@words.join} is a valid english word" %>
+<% elsif @exist == false %>
+<%= "Sorry but #{@words.join} is not an english word"  %>
+<% end %>
+<br>
+<%= link_to "new game", "/"%>
